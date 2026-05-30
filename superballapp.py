@@ -51,7 +51,7 @@ if st.session_state.step == "start":
                 
             with st.spinner("Whisperが音声を解析中... (数分かかる場合があります)"):
                 try:
-                    model = whisper.load_model("small")
+                    model = whisper.load_model("tiny")
                     # 一時保存したファイルを読み込む
                     result = model.transcribe(
                         temp_filename, 
